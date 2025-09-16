@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ************************* Navbar ************************* -->
+    <header class="header">
+        <a href="#" class="logo">Welcome to My Portfolio</a>
+        <i class="bx bx-menu" id="menu" style="color:#ffffff"></i>
+        <nav class="navbar">
+            <a href="#home" class="active" style="--vlr:1">Home</a>
+            <a href="#about" style="--vlr:2">About Me</a>
+            <a href="#contact" style="--vlr:3">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- ************************* Home Section ************************* -->
+    <section class="home" id="home">
+        <div class="text-content">
+            <h1>I'm Arunkumar I</h1>
+            <h2>BCA Student</h2>
+            <div class="text-animation"></div>
+            <p>
+                Hi, my name is Arunkumar. I am studying Computer Applications at Ponnusamy Nadar College of Arts and Science. 
+                I am helpful by nature and a quick learner.
+            </p>
+        </div>
+    </section>
+
+    <!-- ************************* About Section ************************* -->
+    <section class="about" id="about">
+        <h2 class="title">About <span>Me</span></h2>
+        <div class="about-content">
+            <p>
+                I am Arunkumar, a BCA student at Ponnusamy Nadar College of Arts and Science. 
+                I enjoy learning new technologies, building creative projects, and helping others. 
+                I adapt quickly to new challenges and strive to improve my skills every day.
+            </p>
+        </div>
+    </section>
+
+    <!-- ************************* Contact Section ************************* -->
+    <section class="contact" id="contact">
+        <h2 class="title">Contact <span>Me</span></h2>
+        <form action="#" id="">
+            <div class="input-box">
+                <input type="text" required placeholder="Full Name">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="tel" required placeholder="Mobile Number">
+                <input type="text" required placeholder="Subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- ************************* Footer ************************* -->
+    <footer>
+        <div class="text">
+            <p>Arunkumar @ Student of BCA</p>
+        </div>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

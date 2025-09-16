@@ -1,0 +1,243 @@
+/* ===== Reset and Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* ===== Orange Color Palette ===== */
+:root {
+    --main-orange: #FFA500;
+    --light-orange: #ffbb33;
+    --bg-dark: #121212;
+    --text-light: #f2f2f2;
+}
+
+/* ===== Header and Navbar ===== */
+.header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: var(--main-orange);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: var(--main-orange);
+}
+
+/* ===== Home Section ===== */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 100px;
+    background-color: var(--bg-dark);
+    flex-wrap: wrap;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    color: var(--main-orange);
+}
+
+.text-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-section .btn {
+    padding: 10px 25px;
+    margin-right: 10px;
+    background: var(--main-orange);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--light-orange);
+}
+
+.social-media a {
+    color: var(--main-orange);
+    font-size: 24px;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 100px;
+    background-color: #1c1c1c;
+}
+
+.about .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about .title span {
+    color: var(--main-orange);
+}
+
+/* ===== Education ===== */
+.education {
+    padding: 100px;
+    background-color: #1e1e1e;
+}
+
+.education .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.education .title span {
+    color: var(--main-orange);
+}
+
+.education .box {
+    background: #2c2c2c;
+    padding: 20px;
+    border-left: 5px solid var(--main-orange);
+    margin-bottom: 30px;
+}
+
+/* ===== Skills ===== */
+.skills {
+    padding: 100px;
+    background: #1c1c1c;
+}
+
+.skills .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills .title span {
+    color: var(--main-orange);
+}
+
+.skill-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.single-skill {
+    margin-bottom: 20px;
+}
+
+.topic {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--main-orange);
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.percentage {
+    float: right;
+    margin-top: 5px;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    padding: 100px;
+    background-color: #1e1e1e;
+}
+
+.contact .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .title span {
+    color: var(--main-orange);
+}
+
+form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    flex: 1 1 45%;
+    padding: 12px;
+    background: #2c2c2c;
+    color: #fff;
+    border: 2px solid var(--main-orange);
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 100%;
+    resize: none;
+    height: 120px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #aaa;
+}
